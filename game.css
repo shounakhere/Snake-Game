@@ -1,0 +1,78 @@
+h1, h3 {
+    color: var(--txt-primary-color);
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+:root {
+    --bg-primary-colors: black;
+    --txt-primary-color: white;
+    --border-primary-color: white;
+    --pad-primary: 80px;
+    --space-lg: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    padding: var(--pad-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-primary-colors);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.infos {
+    padding: var(--pad-primary);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.info {
+    padding: 21px;
+    border: 2px solid var(--txt-primary-color);
+    border-radius: 10%;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.board {
+    border: 1px solid var(--border-primary-color);
+    width: 100%;
+    max-width: 1500px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(30px,1fr));
+    overflow: hidden;
+    align-content: start;
+    justify-content: start;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-primary-color);
+}
