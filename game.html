@@ -3,28 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
     <section>
         <div class="infos">
-            <div class="info">
-            <h3>High Score : <span id="highscore">0</span>
-            </div>
-            <div class="info">
-            <h3>Score : <span id="highscore">0</span>
-            </div>
-            <div class="info">
-            <h3>Time : <span id="time">00:00</span>
-            </div>
-            </div>
+            <div class="info">Score: <span id="score">0</span></div>
+        </div>
+
+        <div class="container1">
+            <div class="board"></div>
         </div>
         <div class="container1">
-            <div class="board">
+            <button class="pause-btn" onclick="">Press Space To Pause</button>
         </div>
-        </div>
-</section>
-<script src="game.js"></script>
+    </section>
+    <script src="game.js"></script>
 </body>
 </html>
