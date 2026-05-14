@@ -35,7 +35,6 @@ function fillBoard() {
 
         const row = Math.floor(i / cols) + 1;
         const col = (i % cols) + 1;
-        block.textContent = `${row},${col}`;
 
         blocks[`${row}-${col}`] = block;
         board.appendChild(block);
@@ -110,7 +109,7 @@ const gameLoop = setInterval(() => {
     snake.unshift(head)
     snake.pop()
     render();
-}, 100);
+}, 70);
 
 addEventListener("keydown", (event) => {
     if(event.code === "Space"){
